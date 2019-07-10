@@ -7,6 +7,19 @@
     <packaging>pom</packaging>
     <name>gameoflife</name>
     <url>https://github.com/wakaleo/game-of-life</url>
+    
+    <distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://18.188.116.109:8081/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://18.188.116.109:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
     <properties>
         <build.number>SNAPSHOT</build.number>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
